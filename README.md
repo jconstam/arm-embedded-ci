@@ -18,5 +18,6 @@ A collection of tools for managing continuous integration of a C/C++ embedded AR
 |sloccount|apt|`sloccount`|Lines-of-Code counter.|
 |fpvgcc|pip|`fpvgcc`|Analysis of GCC MAP files.|
 |yattag|pip|`yattag`|Simple generation of HTML documents in Python.|
+|pytz|pip|`pytz`|Time zone management in Python.|
 |Python3|apt|`python3`<br/>`python3-pip`|Scripting.|
 |Ruby|apt|`ruby-dev`|Dependency of ceedling.|

@@ -39,4 +39,5 @@ RUN gem install \
 # Install packages from pip
 RUN pip3 install \
     fpvgcc \
-    yattag
+    yattag \
+    pytz

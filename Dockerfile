@@ -40,4 +40,5 @@ RUN gem install \
 RUN pip3 install \
     fpvgcc \
     yattag \
-    pytz
+    pytz \
+    robotframework

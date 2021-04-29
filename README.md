@@ -10,6 +10,7 @@ A collection of tools for managing continuous integration of a C/C++ embedded AR
 |ARM GCC and libraries|apt|`arm-none-eabi-gcc`<br/>`libnewlib-arm-none-eabi`|Compile binary for target processor|
 |CMake|apt|`cmake`|Build system for C/C++.|
 |ceedling|gem|`ceedling`|C unit test framework.|
+|Robot Framework|pip|`robotframework`|Testing framework.|
 |gcovr|apt|`gcovr`|Code coverage report generation.|
 |doxygen|apt|`doxygen`<br/>`graphviz`|Automated code documentation/diagram generation.|
 |cppcheck|apt|`cppcheck`|C/C++ static analysis.|
@@ -19,5 +20,5 @@ A collection of tools for managing continuous integration of a C/C++ embedded AR
 |fpvgcc|pip|`fpvgcc`|Analysis of GCC MAP files.|
 |yattag|pip|`yattag`|Simple generation of HTML documents in Python.|
 |pytz|pip|`pytz`|Time zone management in Python.|
-|Python3|apt|`python3`<br/>`python3-pip`|Scripting.|
+|Python3|apt|`python3`<br/>`python3-pip`|Scripting and testing.|
 |Ruby|apt|`ruby-dev`|Dependency of ceedling.|

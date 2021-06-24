@@ -28,7 +28,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
         valgrind \
         uncrustify \
         sloccount \
-        procmail && \
+        procmail \
+        bc && \
     apt-get -y autoremove && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*

@@ -29,7 +29,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
         uncrustify \
         sloccount \
         procmail \
-        bc && \
+        bc \
+        uuid-dev && \
     apt-get -y autoremove && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*

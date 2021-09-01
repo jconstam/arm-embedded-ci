@@ -1,1 +1,1 @@
-docker push jconstam/arm-embedded-ci
+docker push jconstam/arm-embedded-ci:latest

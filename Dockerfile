@@ -30,7 +30,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
         sloccount \
         procmail \
         bc \
-        uuid-dev && \
+        uuid-dev \
+        pandoc && \
     apt-get -y autoremove && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*

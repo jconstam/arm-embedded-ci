@@ -13,15 +13,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Run Build Script
+      - name: Build Container
         run: bash build.sh
-  push:
-    name: Push Container Image
-    runs-on: ubuntu-latest
-    needs: build
-    if: ${{ github.event_name != 'pull_request' }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Run Push Script
+      - name: Push Container
+        if: ${{ github.event_name != 'pull_request' }}
         run: bash push.sh

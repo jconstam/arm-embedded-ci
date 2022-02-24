@@ -45,8 +45,15 @@ RUN pip3 install \
     fpvgcc \
     yattag \
     pytz \
-    robotframework \
-    robotframework-tidy \
     junit2html \
     flake8 \
     flake8-html
+
+# Install robot-related packages from pip
+RUN pip3 install \
+    robotframework \
+    robotframework-tidy \
+    easygui \
+    python-dateutil \
+    websocket-client \
+    pythonping

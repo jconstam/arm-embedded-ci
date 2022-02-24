@@ -31,7 +31,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
         procmail \
         bc \
         uuid-dev \
-        pandoc && \
+        pandoc \
+        python3-easygui && \
     apt-get -y autoremove && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
@@ -53,7 +54,7 @@ RUN pip3 install \
 RUN pip3 install \
     robotframework \
     robotframework-tidy \
-    easygui \
+    pyyaml \
     python-dateutil \
     websocket-client \
     pythonping

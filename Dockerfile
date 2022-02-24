@@ -46,6 +46,7 @@ RUN pip3 install \
     yattag \
     pytz \
     robotframework \
+    robotframework-tidy \
     junit2html \
     flake8 \
     flake8-html

@@ -32,7 +32,10 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
         bc \
         uuid-dev \
         pandoc \
-        python3-easygui && \
+        nmap \
+        net-tools \
+        python3-easygui \
+        clang-tidy && \
     apt-get -y autoremove && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
@@ -48,7 +51,8 @@ RUN pip3 install \
     pytz \
     junit2html \
     flake8 \
-    flake8-html
+    flake8-html \
+    clang-html
 
 # Install robot-related packages from pip
 RUN pip3 install \

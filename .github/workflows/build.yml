@@ -24,3 +24,11 @@ jobs:
       - name: Push Container
         if: ${{ github.event_name != 'pull_request' }}
         run: bash push.sh
+         - name: Docker Hub Description
+      - name: Update Description
+        if: ${{ github.event_name != 'pull_request' }}
+        uses: peter-evans/dockerhub-description@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          repository: jconstam/arm-embedded-ci

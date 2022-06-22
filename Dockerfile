@@ -60,4 +60,5 @@ RUN pip3 install \
     websocket-client \
     pythonping \
     pytest \
-    pytest-html
+    pytest-html \
+    crcmod

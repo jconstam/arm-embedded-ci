@@ -24,13 +24,14 @@ jobs:
       - name: Push Container
         if: ${{ github.event_name != 'pull_request' }}
         run: bash push.sh
-      - name: push README to Dockerhub
-        uses: christian-korneck/update-container-description-action@v1
-        env:
-          DOCKER_USER: ${{ secrets.DOCKERHUB_USERNAME }}
-          DOCKER_PASS: ${{ secrets.DOCKERHUB_TOKEN }}
-        with:
-          destination_container_repo: jconstam/arm-embedded-ci
-          provider: dockerhub
-          short_description: 'A collection of tools for managing continuous integration of a C/C++ embedded ARM project.'
-          readme_file: 'README.md'
+      # This won't work right now because the DockerHub API does not support pushing descriptions with 2FA enabled.
+      # - name: Update DockerHub Description
+      #   uses: christian-korneck/update-container-description-action@v1
+      #   env:
+      #     DOCKER_USER: ${{ secrets.DOCKERHUB_USERNAME }}
+      #     DOCKER_PASS: ${{ secrets.DOCKERHUB_TOKEN }}
+      #   with:
+      #     destination_container_repo: jconstam/arm-embedded-ci
+      #     provider: dockerhub
+      #     short_description: 'A collection of tools for managing continuous integration of a C/C++ embedded ARM project.'
+      #     readme_file: 'README.md'

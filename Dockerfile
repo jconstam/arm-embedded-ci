@@ -52,13 +52,12 @@ RUN pip3 install \
     junit2html \
     flake8 \
     flake8-html \
-    clang-html
-
-# Install robot-related packages from pip
-RUN pip3 install \
+    clang-html \
     robotframework \
     robotframework-tidy \
     pyyaml \
     python-dateutil \
     websocket-client \
-    pythonping
+    pythonping \
+    pytest \
+    pytest-html

@@ -53,3 +53,4 @@ A collection of tools for managing continuous integration of a C/C++ embedded AR
 - `pythonping`
 - `pytest`
 - `pytest-html`
+- `crcmod`

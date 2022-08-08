@@ -50,7 +50,7 @@ RUN pip3 install \
     yattag \
     pytz \
     junit2html \
-    flake8 \
+    flake8==4.0.1 \
     flake8-html \
     clang-html \
     robotframework \
@@ -61,4 +61,5 @@ RUN pip3 install \
     pythonping \
     pytest \
     pytest-html \
+    pytest-cov \
     crcmod

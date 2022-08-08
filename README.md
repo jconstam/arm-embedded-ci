@@ -43,6 +43,7 @@ A collection of tools for managing continuous integration of a C/C++ embedded AR
 - `pytz`
 - `junit2html`
 - `flake8`
+  - Temporarily fixed to v4.0.1 due to an incompatibility in `flake8-html`
 - `flake8-html`
 - `clang-html`
 - `robotframework`
@@ -53,4 +54,5 @@ A collection of tools for managing continuous integration of a C/C++ embedded AR
 - `pythonping`
 - `pytest`
 - `pytest-html`
+- `pytest-cov`
 - `crcmod`

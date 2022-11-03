@@ -6,6 +6,8 @@ A collection of tools for managing continuous integration of a C/C++ embedded AR
 
 ## Tools
 
+The Mongoose OS configuration tool `mos` is installed from its private package repo.
+
 ### Aptitude Packages
 
 - `tzdata`
@@ -31,6 +33,7 @@ A collection of tools for managing continuous integration of a C/C++ embedded AR
 - `net-tools`
 - `python3-easygui`
 - `clang-tidy`
+- `software-properties-common`
 
 ### Gem Packages
 

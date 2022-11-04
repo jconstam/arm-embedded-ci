@@ -36,7 +36,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
     net-tools \
     python3-easygui \
     clang-tidy \
-    software-properties-common && \
+    software-properties-common \
+    unzip && \
     apt-get -y autoremove && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
@@ -73,5 +74,15 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
 
 # Initialize mos
 RUN mkdir -p /root/.mos
-RUN touch /root/.mos/state.json
+RUN echo '{}' > /root/.mos/state.json
 RUN mos version
+
+# Setup AWS CLI
+ADD https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip ./awscliv2.zip
+RUN unzip ./awscliv2.zip
+RUN ./aws/install
+RUN rm -rf ./aws
+RUN rm -rf ./awscliv2.zip
+
+# Set permission for pythonping to be run by a user
+RUN setcap cap_net_raw+ep $(readlink -f `which python3`)

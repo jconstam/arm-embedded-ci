@@ -7,6 +7,7 @@ A collection of tools for managing continuous integration of a C/C++ embedded AR
 ## Tools
 
 The Mongoose OS configuration tool `mos` is installed from its private package repo.
+The AWS Command Line tool `aws` is installed from the zip file provided by Amazon.
 
 ### Aptitude Packages
 

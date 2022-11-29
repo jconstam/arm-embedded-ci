@@ -37,6 +37,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
     python3-easygui \
     clang-tidy \
     software-properties-common \
+    zip \
     unzip && \
     apt-get -y autoremove && \
     apt-get clean && \

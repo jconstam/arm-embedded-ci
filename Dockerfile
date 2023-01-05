@@ -65,7 +65,8 @@ RUN pip3 install \
     pytest \
     pytest-html \
     pytest-cov \
-    crcmod
+    crcmod \
+    pyserial
 
 # Add Mongose OS Package Repository
 RUN add-apt-repository ppa:mongoose-os/mos

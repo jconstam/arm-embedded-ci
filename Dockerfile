@@ -38,7 +38,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
     clang-tidy \
     software-properties-common \
     zip \
-    unzip && \
+    unzip \
+    shellcheck && \
     apt-get -y autoremove && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
@@ -66,7 +67,8 @@ RUN pip3 install \
     pytest-html \
     pytest-cov \
     crcmod \
-    pyserial
+    pyserial \
+    pytz
 
 # Add Mongose OS Package Repository
 RUN add-apt-repository ppa:mongoose-os/mos

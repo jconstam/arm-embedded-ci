@@ -37,6 +37,7 @@ The AWS Command Line tool `aws` is installed from the zip file provided by Amazo
 - `software-properties-common`
 - `zip`
 - `unzip`
+- `shellcheck`
 
 ### Gem Packages
 
@@ -62,3 +63,5 @@ The AWS Command Line tool `aws` is installed from the zip file provided by Amazo
 - `pytest-html`
 - `pytest-cov`
 - `crcmod`
+- `pyserial`
+- `pytz`

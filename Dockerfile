@@ -68,7 +68,8 @@ RUN pip3 install \
     pytest-cov \
     crcmod \
     pyserial \
-    pytz
+    pytz \
+    influxdb-client
 
 # Add Mongose OS Package Repository
 RUN add-apt-repository ppa:mongoose-os/mos

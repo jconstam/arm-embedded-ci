@@ -65,3 +65,4 @@ The AWS Command Line tool `aws` is installed from the zip file provided by Amazo
 - `crcmod`
 - `pyserial`
 - `pytz`
+- `influxdb-client`

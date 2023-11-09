@@ -3,7 +3,7 @@ FROM ubuntu:20.04
 
 # LABEL about the custom image
 LABEL maintainer="jconstam@gmail.com"
-LABEL version="2.1"
+LABEL version="2.2"
 LABEL description="A collection of tools for managing continuous integration of a C/C++ embedded ARM project."
 
 # Add volume for the code repository
@@ -69,7 +69,8 @@ RUN pip3 install \
     crcmod \
     pyserial \
     pytz \
-    influxdb-client
+    influxdb-client \
+    jsonschema
 
 # Add Mongose OS Package Repository
 RUN add-apt-repository ppa:mongoose-os/mos

@@ -17,7 +17,7 @@ jobs:
         run: bash build.sh
       - name: Login to Docker Hub
         if: ${{ github.event_name != 'pull_request' }}
-        uses: docker/login-action@v1
+        uses: docker/login-action@v3
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
@@ -25,13 +25,14 @@ jobs:
         if: ${{ github.event_name != 'pull_request' }}
         run: bash push.sh
       # This won't work right now because the DockerHub API does not support pushing descriptions with 2FA enabled.
-      # - name: Update DockerHub Description
-      #   uses: christian-korneck/update-container-description-action@v1
-      #   env:
-      #     DOCKER_USER: ${{ secrets.DOCKERHUB_USERNAME }}
-      #     DOCKER_PASS: ${{ secrets.DOCKERHUB_TOKEN }}
-      #   with:
-      #     destination_container_repo: jconstam/arm-embedded-ci
-      #     provider: dockerhub
-      #     short_description: 'A collection of tools for managing continuous integration of a C/C++ embedded ARM project.'
-      #     readme_file: 'README.md'
+      - name: Update DockerHub Description
+        if: ${{ github.event_name != 'pull_request' }}
+        uses: christian-korneck/update-container-description-action@v1
+        env:
+          DOCKER_USER: ${{ secrets.DOCKERHUB_USERNAME }}
+          DOCKER_PASS: ${{ secrets.DOCKERHUB_TOKEN }}
+        with:
+          destination_container_repo: jconstam/arm-embedded-ci
+          provider: dockerhub
+          short_description: 'A collection of tools for managing continuous integration of a C/C++ embedded ARM project.'
+          readme_file: 'README.md'

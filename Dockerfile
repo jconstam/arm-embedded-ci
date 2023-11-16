@@ -70,7 +70,8 @@ RUN pip3 install \
     pyserial \
     pytz \
     influxdb-client \
-    jsonschema
+    jsonschema \
+    validators
 
 # Add Mongose OS Package Repository
 RUN add-apt-repository ppa:mongoose-os/mos

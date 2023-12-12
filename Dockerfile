@@ -59,6 +59,7 @@ RUN pip3 install \
     clang-html \
     robotframework \
     robotframework-tidy \
+    robotframework-reportportal \
     pyyaml \
     python-dateutil \
     websocket-client \

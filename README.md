@@ -68,3 +68,4 @@ The AWS Command Line tool `aws` is installed from the zip file provided by Amazo
 - `influxdb-client`
 - `jsonschema`
 - `validators`
+- `zeroconf`

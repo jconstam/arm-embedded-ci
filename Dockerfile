@@ -72,7 +72,8 @@ RUN pip3 install \
     pytz \
     influxdb-client \
     jsonschema \
-    validators
+    validators \
+    zeroconf
 
 # Add Mongose OS Package Repository
 RUN add-apt-repository ppa:mongoose-os/mos

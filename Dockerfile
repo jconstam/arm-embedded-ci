@@ -73,7 +73,8 @@ RUN pip3 install \
     influxdb-client \
     jsonschema \
     validators \
-    zeroconf
+    zeroconf \
+    python3.10-venv
 
 # Add Mongose OS Package Repository
 RUN add-apt-repository ppa:mongoose-os/mos

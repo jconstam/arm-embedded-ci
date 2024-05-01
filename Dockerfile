@@ -74,7 +74,7 @@ RUN pip3 install \
     jsonschema \
     validators \
     zeroconf \
-    python3.10-venv
+    virtualenv
 
 # Add Mongose OS Package Repository
 RUN add-apt-repository ppa:mongoose-os/mos

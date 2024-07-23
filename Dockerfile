@@ -62,6 +62,7 @@ RUN pip3 install \
     pyyaml \
     python-dateutil \
     websocket-client \
+    pythonping \
     pytest \
     pytest-html \
     pytest-cov \

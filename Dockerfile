@@ -74,7 +74,8 @@ RUN pip3 install \
     validators \
     zeroconf \
     virtualenv \
-    icmplib
+    icmplib \
+    websockets
 
 # Add Mongose OS Package Repository
 RUN add-apt-repository ppa:mongoose-os/mos

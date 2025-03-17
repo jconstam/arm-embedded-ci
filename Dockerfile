@@ -46,7 +46,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
 
 # Install packages from gem
 RUN gem install \
-    ceedling
+    ceedling -v 0.31.1
 
 # Install packages from pip
 RUN pip3 install \

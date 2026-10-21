@@ -49,6 +49,7 @@ RUN gem install \
     ceedling -v 0.31.1
 
 # Install packages from pip
+RUN pip3 install "setuptools_scm<7"
 RUN pip3 install \
     fpvgcc \
     yattag \
